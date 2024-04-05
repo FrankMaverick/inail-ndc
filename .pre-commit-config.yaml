@@ -3,7 +3,7 @@ repos:
   rev: 931e0529c8839f6fa8c1ae315839ba7c3060c5f2
   hooks:
   - id: check-repo-structure
-    args: ["assets/controlled-vocabularies/", "assets/ontologies/", "assets/schemas/"]
+    args: ["assets/controlled-vocabularies/", "assets/ontologies/", "assets/schemas2/"]
   - id: check-filename-format
     args: ["assets/controlled-vocabularies/", "assets/ontologies/", "assets/schemas/"]
   - id: check-filenames-match-uri
