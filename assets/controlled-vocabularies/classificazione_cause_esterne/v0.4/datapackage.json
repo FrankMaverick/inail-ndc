@@ -1,0 +1,45 @@
+{
+    "profile": "tabular-data-package",
+    "resources": [
+        {
+            "path": "classificazione_cause_esterne.csv",
+            "profile": "tabular-data-resource",
+            "name": "classificazione_cause_esterne",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "url",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "id",
+                        "type": "number",
+                        "format": "default"
+                    },
+                    {
+                        "name": "parent",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "label_it",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "level",
+                        "type": "integer",
+                        "format": "default"
+                    }
+                ],
+                "missingValues": [
+                    ""
+                ]
+            }
+        }
+    ]
+}
