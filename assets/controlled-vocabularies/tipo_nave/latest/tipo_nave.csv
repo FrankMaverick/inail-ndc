@@ -1,6 +1,7 @@
 url,id,label_it,level
-https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/0,0,Assente,1
-https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/1,1,Aliscafo,1
+
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/0,0,Assente,1,
+https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/1,1,Aliscafo
 https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/10,10,Imbarcazione a vela,1
 https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/11,11,Motobarca,1
 https://w3id.org/italia/work-accident/controlled-vocabulary/proc21_self_liquidation/tipo_nave/12,12,Motobettolina,1
