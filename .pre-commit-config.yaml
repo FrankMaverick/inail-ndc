@@ -26,7 +26,7 @@ repos:
       ^assets\/controlled-vocabularies/.*\.csv
   - id: validate-oas-schema
     files: >-
-      ^assets\/schemas\/.*.oas3.yaml
+      ^assets\/schemas\/.*\.oas3.yaml
   - id: validate-turtle
     files: >-
       ^assets\/ontologies\/[^\/]+\/latest\/.*\.ttl
