@@ -95,7 +95,7 @@ def test_url():
         print(f"status_code: {ret}")
 
         # Check if the response status code is 200 or 301 (redirect)
-    	if ret.status_code not in [200, 301]:
+        if ret.status_code not in [200, 301]:
             relative_path = extract_relative_path(url, root_dir)
 
             if relative_path:
