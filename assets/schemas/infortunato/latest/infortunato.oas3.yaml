@@ -18,7 +18,7 @@ paths: {}
 tags: []
 components:
  # schemas:  #comment to generate validation error 
-    PersonaFisica:
+    PersonaFisica.
       $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/persona-fisica/latest/persona-fisica.oas3.yaml#/components/schemas/PersonaFisica"
 
     IdInfortunato:
