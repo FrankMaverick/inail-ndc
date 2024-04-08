@@ -14,10 +14,10 @@ info:
   description: |-
    https://w3id.org/italia/work-accident/onto/adm_serv/InfortunatoSulLavoro
 paths: {}
-servers: []
+# servers: []  #comment to generate validation error
 tags: []
 components:
-  schemas:
+ # schemas:  #comment to generate validation error 
     PersonaFisica:
       $ref: "https://raw.githubusercontent.com/InailUfficio5/inail-ndc/main/assets/schemas/persona-fisica/latest/persona-fisica.oas3.yaml#/components/schemas/PersonaFisica"
 
