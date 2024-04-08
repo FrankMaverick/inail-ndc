@@ -26,7 +26,7 @@ INAILCore: a owl:Ontology ;
         l0:,
         RO:,
         TI: ;
-    rdfs:label "Core INAIL Ontology"@en,
+    rdfs:label "Core INAIL Ontology"@en ...
         "Ontologia Core di INAIL"@it ;
     rdfs:comment "Ontologia INAIL relativa ai concetti core dell'istituto: Azienda, Posizione Assicurativa Territoriale (PAT), Posizione Assicurativa Navigazione (PAN), Denuncia, Polizza, Sede INAIL, Retribuzione"@it,
         "This is the ontology of the INAIL Organization about core concepts of the institute: Company, Insurance Territorial Position (PAT), Insurance Navigation Position(PAN), Complaint, Policy, INAIL Office, Salary"@en ;
