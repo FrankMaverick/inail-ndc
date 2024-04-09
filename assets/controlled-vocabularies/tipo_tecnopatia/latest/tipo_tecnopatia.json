@@ -1,7 +1,7 @@
 [
   {
     "url": "https://w3id.org/italia/work-accident/controlled-vocabulary/adm_serv/tipo_tecnopatia/concetto/0101-1-1-1A-1",
-    "@type": [
+    "@type": [ 
       "https://w3id.org/italia/work-accident/onto/adm_serv/TipoTecnopatiaINAIL",
       "skos:Concept"
     ],
