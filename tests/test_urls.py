@@ -20,16 +20,26 @@ def get_urls(root_dirs):
                 urls.append((file_path, url.strip('<">'), root_dir))
     return urls
 
-def request_url(method, url):
+def request_url(method, url, max_redirects=5):
     """
-    Make HTTP request to the given URL with retries.
+    Make HTTP request to the given URL with retries and follow redirects.
     """
     for i in range(1, 4):
-        ret = method(url)
+        ret = method(url, allow_redirects=False)
+        redirect_count = 0
+
+        # Follow redirects
+        while ret.status_code in (301, 302) and redirect_count < max_redirects:
+            url = ret.headers.get('Location')
+            if not url:
+                break
+            ret = method(url, allow_redirects=False)
+            redirect_count += 1
+
         if ret.status_code != 429:
             break
 
-        backoff = int(ret.headers["Retry-After"])
+        backoff = int(ret.headers.get("Retry-After", 1))
         if backoff > 100:
             backoff = 100
         time.sleep(i * backoff)
@@ -82,8 +92,8 @@ def check_repository_existence(url):
 def test_url():
     print("Starting URL test...")
     errors = []
-	
-	# Check if root_dir exist
+
+    # Check if root_dir exist
     for root_dir in root_dirs:
         if not os.path.exists(root_dir):
             print(f"WARNING: root directory '{root_dir}' does not exist.")
@@ -92,10 +102,10 @@ def test_url():
         print(f"Testing URL: {url}")
 
         ret = request_url(requests.head, url)
-        print(f"status_code: {ret}")
+        print(f"status_code: {ret.status_code}")
 
-        # Check if the response status code is 200 or 301 (redirect)
-        if ret.status_code not in [200, 301]:
+        # Check if the response status code is 200
+        if ret.status_code != 200:
             relative_path = extract_relative_path(url, root_dir)
 
             if relative_path:
@@ -113,5 +123,8 @@ def test_url():
             print(error)
         assert False, "\n".join(errors)
 
-# Run test
-test_url()
+def main():
+    test_url()
+
+if __name__ == "__main__":
+    main()
