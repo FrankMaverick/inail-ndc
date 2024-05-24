@@ -1,7 +1,6 @@
 #
 # Semantic checks.
 #
-repos:
 - repo: https://github.com/FrankMaverick/json-semantic-playground
   rev: c2dd9716d5dd24332811d55526a53c5ba1ee2c46
   hooks:
@@ -25,8 +24,8 @@ repos:
       files: >-
         ^assets\/.*
     - id: validate-filename-match-uri
-        ^assets\/.*\.ttl
-      language: python
+      files: >-
+		^assets\/.*\.ttl
     - id: validate-filename-match-directory
       files: >-
         ^assets\/.*
