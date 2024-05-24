@@ -12,29 +12,20 @@
     - id: validate-openapi-schema
       files: ^assets/.*\.oas3.yaml
     - id: validate-directory-versioning
-      files: >-
-        ^assets/.*\.ttl
+      files: >- ^assets/.*\.ttl
     - id: validate-csv
-      files: >-
-        ^assets/vocabularies/.*\.csv
+      files: >- ^assets/.*\.csv
     - id: validate-repo-structure
-      files: >-
-        ^assets\/.*\.ttl
+      files: >- ^assets\/.*\.ttl
     - id: validate-filename-format
-      files: >-
-        ^assets\/.*
+      files: >- ^assets\/.*
     - id: validate-filename-match-uri
-      files: >-
-        ^assets\/.*\.ttl
+      files: >- ^assets\/.*\.ttl
     - id: validate-filename-match-directory
-      files: >-
-        ^assets\/.*
+      files: >- ^assets\/.*
     - id: validate-directory-versioning-pattern
-      files: >-
-        ^assets\/.*\.ttl
+      files: >- ^assets\/.*\.ttl
     - id: validate-mandatory-files-presence
-      files: >-
-        ^assets\/.*
+      files: >- ^assets\/.*
     - id: validate-utf8-file-encoding
-      files: >-
-        ^assets\/.*
+      files: >- ^assets\/.*
