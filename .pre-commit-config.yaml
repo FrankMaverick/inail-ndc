@@ -2,7 +2,7 @@
 # Semantic checks.
 #
 - repo: https://github.com/FrankMaverick/json-semantic-playground
-  rev: b3ef459d0e04a136e5c2d9f0db07171d4d4f536a
+  rev: 3a7cbf6f1080a01fa9535b73b6a034643fbc0b55
   hooks:
     - id: validate-turtle
       files: ^assets/.*\.ttl$
