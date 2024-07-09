@@ -99,10 +99,10 @@ def test_url():
             print(f"WARNING: root directory '{root_dir}' does not exist.")
 
     for file_path, url, root_dir in get_urls(root_dirs):
-        print(f"Testing URL: {url}")
+        # print(f"Testing URL: {url}")
 
         ret = request_url(requests.head, url)
-        print(f"status_code: {ret.status_code}")
+        # print(f"status_code: {ret.status_code}")
 
         # Check if the response status code is 200
         if ret.status_code != 200:
