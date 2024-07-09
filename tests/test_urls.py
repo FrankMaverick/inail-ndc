@@ -121,7 +121,7 @@ def test_url():
         print("\nErrors found during URL test:")
         for error in errors:
             print(error)
-        assert False, "\n".join(errors)
+        assert False
 
 def main():
     test_url()
