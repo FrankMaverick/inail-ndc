@@ -1,19 +1,9 @@
 #
 # Semantic checks.
 #
-- repo: https://github.com/FrankMaverick/json-semantic-playground
-  rev: 1f888b3c5b2e2150c87298d712e0b0c19b4c43fb
+- repo: https://github.com/teamdigitale/dati-semantic-tools
+  rev: c2074cd9c90dc1751f5535459afc3da6d21ab60d
   hooks:
-    - id: validate-turtle
-      files: ^assets/.*\.ttl$
-    - id: validate-oas-schema
-      files: ^assets/.*\.schema.yaml
-    - id: validate-openapi-schema
-      files: ^assets/.*\.oas3.yaml
-    - id: validate-directory-versioning
-      files: ^assets/.*\.ttl
-    - id: validate-csv
-      files: ^assets/.*\.csv
     - id: validate-repo-structure
       files: ^assets\/.*
     - id: validate-filename-format
@@ -28,3 +18,13 @@
       files: ^assets\/.*
     - id: validate-utf8-file-encoding
       files: ^assets\/.*
+    - id: validate-turtle
+      files: ^assets/.*\.ttl$
+    - id: validate-oas-schema
+      files: ^assets/.*\.schema.yaml
+    - id: validate-openapi-schema
+      files: ^assets/.*\.oas3.yaml
+    - id: validate-directory-versioning
+      files: ^assets/.*\.ttl
+    - id: validate-csv
+      files: ^assets/.*\.csv      
