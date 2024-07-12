@@ -18,7 +18,7 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix VL: <http://www.w3.org/2001/XMLSchema#> .
 
-INAILCore: a owl:Ontology ;
+INAILCore: a owl:Ontology ?ABC
     owl:versionIRI INAILCore:2.1 ;
     owl:imports CLV:,
         COV:,
