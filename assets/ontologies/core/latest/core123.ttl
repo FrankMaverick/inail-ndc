@@ -16,7 +16,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix TI: <https://w3id.org/italia/onto/TI/> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix VL: <http://www.w3.org/2001/XMLSchema#> .
 
 INAILCore: a owl:Ontology ;
     owl:versionIRI INAILCore:2.1 ;
